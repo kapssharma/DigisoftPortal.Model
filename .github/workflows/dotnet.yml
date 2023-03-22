@@ -30,6 +30,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal      
     - name: Pack Report
-      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no build --configuration Release --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
     - name: Push Package
       run: dotnet push ${{ env.PROJECT_PATH }}\*.nupkg -k ${{ secrets.NUGET_AUTH_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }}
