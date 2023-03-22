@@ -8,7 +8,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+env:
+   PROJECT_PATH: 'Digisoft.Portal.Model.csproj'
+   PACKAGE_OUTPUT_DIRECTORY: ${{github.workspace}}\output
+   NUGET_SOURCE_URL: 'https://api.nuget.org/v3/index.json'
 jobs:
   build:
 
@@ -21,8 +24,12 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ${{ env.PROJECT_PATH }}
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
     - name: Test
       run: dotnet test --no-build --verbosity normal      
+    - name: Pack Report
+      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no build --configuration Release --include-symbols --output ${{ env.PROJECT_PATH }}
+    - name: Push Package
+      run: dotnet push ${{ env.PROJECT_PATH }}\*.nupkg -k ${{ secrets.NUGET_AUTH_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }}
