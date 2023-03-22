@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/kapssharma/Digisoft.Portal.Model</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Digisoft Solution;Digisoft;</PackageTags>
-    <PackageLicenseFile>C:\Users\kapil\source\repos\kapssharma\Digisoft.Portal.Model\licenses\LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseFile>C:\Users\kapil\source\repos\kapssharma\Digisoft.Portal.Model\Digisoft.Portal.Model\licenses\LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
