@@ -26,7 +26,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Package
-      run: dotnet pack -c Release -o Digisoft.Portal.Model.csproj
-    - name: Publish
-      run: dotnet nuget push *.nupkg -k oy2idici3o5lpyyu77bqyesl23iuwreujai7bhkvizppty -s https://api.nuget.org/v3/index.json
+    - name: Pack
+      run: dotnet pack Digisoft.Portal.Model\\Digisoft.Portal.Model.csproj -c Release
+    - name: Publish to GitHub packages 
+      run: dotnet nuget push /home/runner/work/Digisoft.Portal.Model/Digisoft.Portal.Model/Digisoft.Portal.Model/bin/Release/*.nupkg --api-key oy2idici3o5lpyyu77bqyesl23iuwreujai7bhkvizppty --source https://api.nuget.org/v3/index.json --skip-duplicate`
+    
