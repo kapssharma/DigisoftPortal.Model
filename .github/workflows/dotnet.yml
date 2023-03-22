@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Pack Digisoft Portal Model project
-      run: dotnet pack --no-build --configuration debudg --include-symbols -p:SymbolPackageFormat=snupkg -o .
-    - name: Publish package to NuGet
-      run: dotnet nuget push *.nupkg --api-key oy2idici3o5lpyyu77bqyesl23iuwreujai7bhkvizppty --source "https://api.nuget.org/v3/index.json" --skip-duplicate
+    - name: Package
+      run: dotnet pack -c Release -o . Digisoft.Portal.Model/Digisoft.Portal.Model.csproj
+    - name: Publish
+      run: dotnet nuget push *.nupkg -k oy2idici3o5lpyyu77bqyesl23iuwreujai7bhkvizppty -s https://api.nuget.org/v3/index.json
