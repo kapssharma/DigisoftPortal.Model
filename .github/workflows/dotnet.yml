@@ -27,6 +27,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Package
-      run: dotnet pack -c Release -o
+      run: dotnet pack -c Release -o Digisoft.Portal.Model.csproj
     - name: Publish
       run: dotnet nuget push *.nupkg -k oy2idici3o5lpyyu77bqyesl23iuwreujai7bhkvizppty -s https://api.nuget.org/v3/index.json
