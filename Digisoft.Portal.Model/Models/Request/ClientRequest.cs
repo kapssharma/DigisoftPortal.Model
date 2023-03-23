@@ -6,21 +6,21 @@ public class ClientRequest:GenericColumns
 {
     [DataType("varchar(50)")]
     [Required]
-    public string FirstName { get; set; }
+    public string? FirstName { get; set; }
     [DataType("varchar(50)")]
     public string? MiddleName { get; set; }
     [DataType("varchar(50)")]
     [Required]
-    public string LastName { get; set; }
+    public string? LastName { get; set; }
     [DataType("varchar(250)")]
     [Required]
     [EmailAddress]
-    public string Email { get; set; }
+    public string? Email { get; set; }
     public int SalesSourceID { get; set; }
     [DataType("varchar(20)")]
     [Required]
     [Phone]
-    public string PhoneNumber { get; set; }
+    public string? PhoneNumber { get; set; }
 
     [DataType("varchar(100)")]
     public string? Skype { get; set; }
@@ -37,7 +37,7 @@ public class ClientRequest:GenericColumns
 
     [DataType("varchar(150)")]
     [Required]
-    public string Company { get; set; }
+    public string? Company { get; set; }
     [DataType("varchar(50)")]
     public string? Country { get; set; }
     [DataType("varchar(50)")]

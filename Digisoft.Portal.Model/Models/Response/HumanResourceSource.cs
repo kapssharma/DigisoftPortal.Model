@@ -7,8 +7,8 @@ public class HumanResourceSource
 
     [Required]
     [DataType("nvarchar(50)")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     [DataType("nvarchar(250)")]
-    public string Icon { get; set; }
+    public string? Icon { get; set; }
 }

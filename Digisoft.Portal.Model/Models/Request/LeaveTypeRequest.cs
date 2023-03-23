@@ -12,6 +12,6 @@ namespace DigisoftPortal.Model.Models
         
         [DataType("nvarchar(100)")]
         [Required]
-        public string Description { get; set; } 
+        public string? Description { get; set; } 
     }
 }

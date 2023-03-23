@@ -13,14 +13,14 @@ public class LeadSteps
     public int LeadTypeID { get; set; }
     [Required]
     [DataType("nvarchar(100)")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
     [DataType("nvarchar(50)")]
-    public string BGColor { get; set; }
+    public string? BGColor { get; set; }
     [DataType("nvarchar(50)")]
-    public string Color { get; set; }
+    public string? Color { get; set; }
     public bool IsReasonRequired { get; set; }
     [DataType("nvarchar(2500)")]
-    public string MessageHTML { get; set; }
+    public string? MessageHTML { get; set; }
     [DataType("nvarchar(500)")]
-    public string Message { get; set; }
+    public string? Message { get; set; }
 }

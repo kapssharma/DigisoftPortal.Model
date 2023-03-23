@@ -10,6 +10,6 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class RolesResponse
 {
-    public Pagination Pagination { get; set; }
+    public Pagination? Pagination { get; set; }
     public List<Roles>? Roles { get; set; }
 }

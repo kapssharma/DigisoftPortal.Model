@@ -7,9 +7,9 @@ namespace DigisoftPortal.Model.Models
        
         [DataType("nvarchar(50)")]
         [Required]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [DataType("nvarchar(250)")]
-        public string Icon { get; set; }
+        public string? Icon { get; set; }
     }
 }

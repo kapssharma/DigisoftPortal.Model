@@ -8,7 +8,7 @@ public class Project
 
     [Required]
     [DataType("VARCHAR(50)")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     public int SalesSourceID { get; set; }
 

@@ -6,7 +6,7 @@ public class HRDailyUpdateInsights
 {
     [DataType("varchar(2000)")]
     [Required]
-    public string Task { get; set; }
+    public string? Task { get; set; }
 
     [DataType("time(7)")]
     public TimeSpan SpendHours { get; set; }

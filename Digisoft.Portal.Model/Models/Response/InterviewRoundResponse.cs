@@ -4,6 +4,6 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class InterviewRoundResponse
 {
-    public Pagination Pagination { get; set; }
+    public Pagination? Pagination { get; set; }
     public List<InterviewRound>? InterviewRounds { get; set; }
 }

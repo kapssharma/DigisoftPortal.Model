@@ -11,6 +11,6 @@ public class SkillSetRequest
     [StringLength(50)]
     [Required]
 
-    public string Name { get; set; }
+    public string? Name { get; set; }
 }
 

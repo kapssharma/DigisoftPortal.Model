@@ -10,6 +10,6 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class LeaveReasonResponse
 {
-    public Pagination Pagination { get; set; }
+    public Pagination? Pagination { get; set; }
     public List<LeaveReason>? leaveReasons { get; set; }
 }

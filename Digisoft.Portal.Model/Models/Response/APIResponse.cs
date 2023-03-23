@@ -9,6 +9,6 @@ namespace DigisoftPortal.Model.Models
     public class APIResponse
     {
         public int id { get; set; }
-        public string message { get; set; }
+        public string? message { get; set; }
     }
 }

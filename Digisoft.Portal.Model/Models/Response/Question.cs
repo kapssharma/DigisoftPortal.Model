@@ -9,5 +9,5 @@ public class Questions
     
     [DataType("nvarchar(MAX)")]
     [Required]
-    public string Question { get; set; }
+    public string? Question { get; set; }
 }
