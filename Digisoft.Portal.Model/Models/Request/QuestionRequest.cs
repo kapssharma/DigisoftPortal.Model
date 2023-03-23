@@ -11,6 +11,6 @@ namespace DigisoftPortal.Model.Models
     {
         [DataType("nvarchar(MAX)")]
         [Required]
-        public string Question { get; set; }
+        public string? Question { get; set; }
     }
 }

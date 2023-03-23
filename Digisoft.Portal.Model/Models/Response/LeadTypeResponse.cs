@@ -9,6 +9,6 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class LeadTypeResponse
 {
-    public Pagination Pagination { get; set; }
+    public Pagination? Pagination { get; set; }
     public List<LeadType>? LeadTypes { get; set; }
 }

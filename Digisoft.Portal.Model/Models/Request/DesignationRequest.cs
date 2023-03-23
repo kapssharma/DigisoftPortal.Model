@@ -5,6 +5,6 @@ public class DesignationRequest
 {
     [Required]
     [StringLength(100)]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 }
 

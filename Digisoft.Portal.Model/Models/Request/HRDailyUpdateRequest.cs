@@ -5,7 +5,7 @@ namespace DigisoftPortal.Model.Models.Request;
 
 public class HRDailyUpdateRequest
 {
-    public List<HRDailyUpdateInsights> HRDailyUpdateInsights { get; set; }
-    public DailyUpdateRequest DailyUpdateRequest { get; set; }
+    public List<HRDailyUpdateInsights>? HRDailyUpdateInsights { get; set; }
+    public DailyUpdateRequest? DailyUpdateRequest { get; set; }
 
 }

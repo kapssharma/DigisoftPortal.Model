@@ -5,6 +5,6 @@ public class LeaveReasonRequest
     [StringLength(100)]
     [Required]
 
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }
 

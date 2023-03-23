@@ -7,7 +7,7 @@ public class HiringRequest:GenericColumns
 {
     [DataType("varchar(500)")]
     [Required]
-    public string Title {get; set;}
+    public string? Title {get; set;}
     [Required]
     public int MinExpInYY { get; set;}
     [Required]

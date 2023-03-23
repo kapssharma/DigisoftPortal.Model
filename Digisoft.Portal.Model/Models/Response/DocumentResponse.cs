@@ -9,6 +9,6 @@ using System.Threading.Tasks;
 namespace DigisoftPortal.Model.Models.Response;
 public class DocumentResponse
 {
-    public Pagination Pagination { get; set; }
+    public Pagination? Pagination { get; set; }
     public List<Document>? Documents { get; set; }
 }

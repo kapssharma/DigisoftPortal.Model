@@ -7,5 +7,5 @@ public class InterviewRound
 
     [Required]
     [DataType("nvarchar(20)")]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }

@@ -13,5 +13,5 @@ public class SkillSet
     public int Id { get; set; }
     [DataType("nvarchar(50)")]
     [Required]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 }

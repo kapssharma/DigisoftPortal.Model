@@ -9,5 +9,5 @@ public class LeaveType
 
     [Required]
     [DataType("nvarchar(100)")]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }

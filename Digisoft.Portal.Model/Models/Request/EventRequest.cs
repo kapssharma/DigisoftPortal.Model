@@ -7,7 +7,7 @@ public class EventRequest:GenericColumns
     [Required]
     [DataType("varchar(100)")]
     [MaxLength(length:100)]
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     [DataType("varchar(450)")]
     [MaxLength(length: 450)]

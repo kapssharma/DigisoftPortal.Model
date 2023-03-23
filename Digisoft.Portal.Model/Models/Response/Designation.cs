@@ -12,5 +12,5 @@ public class Designation
     public int Id { get; set; }
     [Required]
     [StringLength(100)]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 }
