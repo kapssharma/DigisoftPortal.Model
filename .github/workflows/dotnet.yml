@@ -5,6 +5,7 @@ name: .NET
 
 on:
   pull_request:
+    types: [closed]
     branches: [ "main" ]
 env:
    PROJECT_PATH: 'Digisoft.Portal.Model/Digisoft.Portal.Model.csproj'
