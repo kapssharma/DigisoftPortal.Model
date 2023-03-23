@@ -18,5 +18,4 @@ public class Leaves
     public string? ApprovedBy { get; set; }
     public DateTime CreatedOn { get; set; }
     public bool IsActive { get; set; }
-
 }
