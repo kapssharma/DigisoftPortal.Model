@@ -10,7 +10,7 @@ public class SalesDailyUpdateInsights
 
     [DataType("varchar(2000)")]
     [Required]
-    public string Task { get; set; }
+    public string? Task { get; set; }
     public int ProjectId { get; set; }
     public bool HelpingHours { get; set; }
     public int HelpingPersonId { get; set; }
