@@ -14,4 +14,5 @@ public class Hirings
     public DateTime? CreatedOn { get; set; }
     public bool IsActive { get; set; }
     public string? SkillSet { get; set; }
+    public int Experience { get; set; }
 }
