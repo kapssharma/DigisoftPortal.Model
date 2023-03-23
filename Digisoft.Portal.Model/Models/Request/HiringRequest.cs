@@ -26,6 +26,6 @@ public class HiringRequest:GenericColumns
     public decimal MinPackage { get; set; }
     public decimal MaxPackage { get; set; }
     public int HiredSoFar { get; set; }
-    public string? SkillSet { get; set; }
+    public int SkillSetId { get; set; }
 
 }
