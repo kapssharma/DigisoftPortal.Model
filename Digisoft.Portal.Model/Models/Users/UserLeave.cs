@@ -8,11 +8,11 @@ public class UserLeave : BaseEntity
     public int UserId { get; set; }
     [DataType("varchar(2000)")]
     [Required]
-    public string OtherReason { get; set; }
+    public string? OtherReason { get; set; }
     public bool NotifiyOthers { get; set; }
 
     [DataType("varchar(2000)")]
-    public string NotifyEmails { get; set; }
+    public string? NotifyEmails { get; set; }
     [Required]
     public bool IsApproved { get; set; }
     [Required]
