@@ -18,10 +18,9 @@ public class LeavesRequest
     [EmailAddress]
     public string? NotifyEmails { get; set; }
     [DataType("varchar(2000)")]
-    public string Notes { get; set; }
-    public bool ApprovedBy { get; set; }
+    public string? Notes { get; set; }
+    public bool IsApproved { get; set; }
     public DateTime ApprovedAt { get; set; }
-    public bool ApprovedBy1 { get; set; }
-    public DateTime ApprovedAt1 { get; set; }
+    public string? ApprovedBy { get; set; }
     public List<LeaveDays>? LeaveDays { get; set; }
 }

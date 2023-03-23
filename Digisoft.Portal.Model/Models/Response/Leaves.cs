@@ -11,10 +11,12 @@ public class Leaves
     public DateTime StartFrom { get; set; }
     public DateTime StartEnd { get; set; }
     public int TotalDays { get; set; }
-
     public string? LeaveType { get; set; }
     public string? LeaveReasons { get; set; }
+    public bool IsApproved { get; set; }
+    public DateTime ApprovedAt { get; set; }
+    public string? ApprovedBy { get; set; }
     public DateTime CreatedOn { get; set; }
     public bool IsActive { get; set; }
-   
+
 }
