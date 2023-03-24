@@ -10,8 +10,8 @@ namespace Digisoft.Portal.Model.Models.Response
     {
         public int? Today_Leave_Counts { get; set; }
         public int? Current_Hiring_Counts { get; set; }
-        public int? Upcomming_Events_Counts { get; set; }
-        public int? Upcomming_Leaves_Counts { get; set; }
+        public int? Upcoming_Events_Counts { get; set; }
+        public int? Upcoming_Leaves_Counts { get; set; }
         public int? New_Joining_Counts { get; set; }
         public int? Missing_Status_Counts { get; set; }
         public int? Notified_Candidates_Counts { get; set; }
