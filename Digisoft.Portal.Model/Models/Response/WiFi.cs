@@ -1,6 +1,6 @@
 ﻿namespace DigisoftPortal.Model.Models.Response;
 
-public class WiFi
+public class WiFi : GenericColumns
 {
     public string? Name { get; set; }
 
