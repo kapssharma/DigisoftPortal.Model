@@ -5,12 +5,12 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class Hiring
 {
+    public int Id { get; set; }
     public string? Title { get; set; }
-    public int MinExpInYY { get; set; }
-    public int MinExpInMM { get; set; }
+   
     public int MaxExpInYY { get; set; }
     public int MaxExpInMM { get; set; }
-    public string? Remark { get; set; }
+  
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime StartDate { get; set; }
 
