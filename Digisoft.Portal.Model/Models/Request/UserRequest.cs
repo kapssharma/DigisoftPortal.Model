@@ -37,14 +37,19 @@ public class UserRequest:GenericColumns
 
     public string? OfficialEmail { get; set; }
     public string? ProfileImage { get; set; }
+
+    [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime DOB { get; set; }
 
     public int BloodGroup { get; set; }
     public bool IsEmailConfirmed { get; set; }
     public bool IsLocked { get; set; }
+
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime LockedUntill { get; set; }
     [DataType("char(1)")]
     public char Gender { get; set; }
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime JoiningDate { get; set; }
 
     public int DesignationId { get; set; }
