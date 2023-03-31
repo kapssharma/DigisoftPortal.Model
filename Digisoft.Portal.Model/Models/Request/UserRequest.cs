@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-public class UserRequest
+public class UserRequest:GenericColumns
 {
     [DataType("nvarchar(50)")]
 
