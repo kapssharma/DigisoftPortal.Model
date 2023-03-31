@@ -18,7 +18,7 @@ public class UserList
     public string? ProfileImage { get; set; }
     public string? Password { get; set; }
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
-    public DateTime DOB { get; set; }
+    public DateTime? DOB { get; set; }
     public int BloodGroup { get; set; }
     public int RoleId { get; set; }
     public int DesignationId { get; set; }
@@ -28,5 +28,5 @@ public class UserList
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime? lockedUntil { get; set; }
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
-    public DateTime JoiningDate { get; set; }
+    public DateTime? JoiningDate { get; set; }
 }
