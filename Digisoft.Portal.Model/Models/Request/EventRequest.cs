@@ -18,9 +18,9 @@ public class EventRequest:GenericColumns
     public DateTime StartDate { get; set; }
     [Required]
     public DateTime EndDate { get; set; }
-    [Required]
+   
     public TimeSpan StartTime { get; set; }
-    [Required]
+   
     public TimeSpan EndTime { get; set; }
 
     [DataType("varchar(30)")]
