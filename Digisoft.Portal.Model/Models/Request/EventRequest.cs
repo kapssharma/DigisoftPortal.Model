@@ -16,7 +16,7 @@ public class EventRequest:GenericColumns
     public bool AllDay { get; set; }
     [Required]
     public DateTime StartDate { get; set; }
-    [Required]
+   
     public DateTime EndDate { get; set; }
    
     public TimeSpan StartTime { get; set; }
