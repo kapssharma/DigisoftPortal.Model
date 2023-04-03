@@ -11,5 +11,6 @@ namespace Digisoft.Portal.Model.Models.ViewModels
         public string? FileName { get; set; }
         public bool IsRemoved { get; set; }
         public string? Message { get; set; }
+
     }
 }
