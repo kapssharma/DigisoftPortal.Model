@@ -4,9 +4,9 @@ namespace Digisoft.Portal.Model.Models.ViewModels;
 
 public class VMForHiring
 {
-    public VMForHiring(Hiring? hiring)
+    public VMForHiring()
     {
-        Hiring = hiring;
+        Hiring = new Hiring();
         SkillSet = new List<SkillSet>();
     }
     public Hiring? Hiring { get; set; }
