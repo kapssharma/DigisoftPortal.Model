@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-public class UserRequest
+public class UserRequest:GenericColumns
 {
     [DataType("nvarchar(50)")]
 
@@ -37,15 +37,20 @@ public class UserRequest
 
     public string? OfficialEmail { get; set; }
     public string? ProfileImage { get; set; }
-    public DateTime DOB { get; set; }
+
+    [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? DOB { get; set; }
 
     public int BloodGroup { get; set; }
     public bool IsEmailConfirmed { get; set; }
     public bool IsLocked { get; set; }
-    public DateTime LockedUntill { get; set; }
+
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? LockedUntill { get; set; }
     [DataType("char(1)")]
     public char Gender { get; set; }
-    public DateTime JoiningDate { get; set; }
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? JoiningDate { get; set; }
 
     public int DesignationId { get; set; }
 

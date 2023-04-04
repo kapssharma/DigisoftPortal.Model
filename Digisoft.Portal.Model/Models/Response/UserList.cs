@@ -17,16 +17,16 @@ public class UserList
     public string? OfficialEmail { get; set; }
     public string? ProfileImage { get; set; }
     public string? Password { get; set; }
-    [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
-    public DateTime DOB { get; set; }
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? DOB { get; set; }
     public int BloodGroup { get; set; }
     public int RoleId { get; set; }
     public int DesignationId { get; set; }
     public bool IsEmailConfirmed { get; set; }
     public bool IsLocked { get; set; }
     public char Gender { get; set; }
-    [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime? lockedUntil { get; set; }
-    [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
-    public DateTime JoiningDate { get; set; }
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? JoiningDate { get; set; }
 }
