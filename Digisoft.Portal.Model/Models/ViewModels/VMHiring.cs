@@ -5,9 +5,6 @@ public class VMHiring
 {
    public class VMForHiring
     {
-        public VMForHiring()
-        {
-        }
         public VMForHiring(Hiring? hiring)
         {
             Hiring = hiring;
