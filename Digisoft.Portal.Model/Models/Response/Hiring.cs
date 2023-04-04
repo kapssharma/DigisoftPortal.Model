@@ -20,6 +20,6 @@ public class Hiring
     public decimal MinPackage { get; set; }
     public decimal MaxPackage { get; set; }
     public int HiredSoFar { get; set; }
-    public string? SkillSet { get; set; }
+    public int SkillSet { get; set; }
 
 }
