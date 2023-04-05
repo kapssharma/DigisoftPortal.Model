@@ -5,7 +5,8 @@ namespace DigisoftPortal.Model;
 public class UserBankDetail
 {
     [DataType("nvarchar(20)")]
-   
+
+    public int ID { get; set; }
     public string? AccountNo { get; set; }
     [DataType("nvarchar(100)")]
     

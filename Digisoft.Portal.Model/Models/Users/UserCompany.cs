@@ -2,7 +2,7 @@
 
 public class UserCompany
 {
-    public int UserComapnyId {get;set;}
+    public int ID {get;set;}
     public string? Company { get; set; }
     public string? Salary { get; set; }
 }
