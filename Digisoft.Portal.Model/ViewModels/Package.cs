@@ -1,6 +1,4 @@
-﻿
-namespace Digisoft.Portal.Model;
-
+﻿namespace Digisoft.Portal.Model.ViewModels;
 public class Package
 {
     public int Id { get; set; }
