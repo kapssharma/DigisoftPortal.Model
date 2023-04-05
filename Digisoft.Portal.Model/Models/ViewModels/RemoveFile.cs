@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Digisoft.Portal.Model.Models.ViewModels
+﻿namespace Digisoft.Portal.Model
 {
     public class RemoveFile
     {
