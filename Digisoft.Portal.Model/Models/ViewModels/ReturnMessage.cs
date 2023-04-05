@@ -1,4 +1,4 @@
-﻿namespace Digisoft.Portal.Web.Models
+﻿namespace Digisoft.Portal.Model
 {
     public class ReturnMessage
     {

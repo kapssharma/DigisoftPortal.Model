@@ -1,12 +1,6 @@
-﻿using Digisoft.Portal.Web.Models;
-using DigisoftPortal.Model.Models.Response;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DigisoftPortal.Model.Models.Response;
 
-namespace Digisoft.Portal.Model.Models.ViewModels
+namespace Digisoft.Portal.Model
 {
     public class VMUserRequest
     {
