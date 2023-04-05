@@ -1,5 +1,5 @@
 ﻿using DigisoftPortal.Model.Models.Response;
-namespace Digisoft.Portal.Model;
+namespace Digisoft.Portal.Model.ViewModels;
 
 
 public class VMForHiring
