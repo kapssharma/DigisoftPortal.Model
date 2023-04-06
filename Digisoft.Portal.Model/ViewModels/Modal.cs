@@ -17,5 +17,6 @@ public class Modal
     public string? SaveButtonText { get; set; } = "Save";
     public string? ModalClassName { get; set; }
     public string? FunctionName { get; set; } = "OnSubmit(this)";
+    public string? CallBackFunctionName { get; set; }
 
 }
