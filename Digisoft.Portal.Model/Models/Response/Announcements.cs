@@ -13,6 +13,9 @@ public class Announcements
     public DateTime EffectiveTo { get; set; }
 
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime? EffectiveFrom { get; set; }
+
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime CreatedOn { get; set; }
 
     public bool Notified { get; set; }
