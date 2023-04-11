@@ -36,5 +36,6 @@ public class User
     public DateTime DOB { get; set; }
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime CreatedOn { get; set; }
+    public bool IsActive { get; set; }
 
 }
