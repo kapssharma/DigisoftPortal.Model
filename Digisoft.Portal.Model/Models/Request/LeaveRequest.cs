@@ -15,7 +15,6 @@ public class LeavesRequest
     public string? OtherReason { get; set; }
     public bool NotifiyOthers { get; set; }
     [DataType("varchar(2000)")]
-    [EmailAddress]
     public string? NotifyEmails { get; set; }
     [DataType("varchar(2000)")]
     public string? Notes { get; set; }
