@@ -8,14 +8,18 @@ public class Leaves
     [Required]
     public int UserLeavesId { get; set; }
     public string? EmployeeName { get; set; }
-    public DateTime StartFrom { get; set; }
-    public DateTime StartEnd { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime? StartFrom { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime? StartEnd { get; set; }
     public int TotalDays { get; set; }
     public string? LeaveType { get; set; }
     public string? LeaveReasons { get; set; }
     public bool IsApproved { get; set; }
-    public DateTime ApprovedAt { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime? ApprovedAt { get; set; }
     public string? ApprovedBy { get; set; }
-    public DateTime CreatedOn { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime? CreatedOn { get; set; }
     public bool IsActive { get; set; }
 }
