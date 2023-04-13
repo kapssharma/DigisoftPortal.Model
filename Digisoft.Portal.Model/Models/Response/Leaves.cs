@@ -5,6 +5,7 @@ namespace DigisoftPortal.Model.Models.Response;
 public class Leaves
 {
     public int Id { get; set; }
+    public int LeavesDaysId { get; set; }
     [Required]
     public int UserLeavesId { get; set; }
     public string? EmployeeName { get; set; }
