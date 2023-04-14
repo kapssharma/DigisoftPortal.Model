@@ -15,6 +15,7 @@ namespace Digisoft.Portal.Model.ViewModels
             Pagination = new Pagination();
             VMForUserLeave = new List<VMForUserLeave>();
         }
+
         public Pagination? Pagination { get; set; }
         public List<VMForUserLeave>? VMForUserLeave { get; set; }
     }
