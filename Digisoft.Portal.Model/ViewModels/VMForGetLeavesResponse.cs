@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Digisoft.Portal.Model.ViewModels
 {
-    internal class VMForGetLeavesResponse
+    public class VMForGetLeavesResponse
     {
         public VMForGetLeavesResponse()
         {
