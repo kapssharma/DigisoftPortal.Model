@@ -31,6 +31,9 @@ public class User
     public string? OfficialEmail { get; set; }
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime JoiningDate { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    public DateTime? ReleaseDate { get; set; }
+
     [Required]
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime DOB { get; set; }

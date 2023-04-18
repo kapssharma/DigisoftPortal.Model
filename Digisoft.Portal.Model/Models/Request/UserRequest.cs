@@ -52,6 +52,9 @@ public class UserRequest:GenericColumns
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime? JoiningDate { get; set; }
 
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? ReleaseDate { get; set; }
+
     public int DesignationId { get; set; }
 
     public int RoleId { get; set; }
