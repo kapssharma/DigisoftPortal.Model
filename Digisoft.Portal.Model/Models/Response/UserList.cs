@@ -29,4 +29,7 @@ public class UserList
     public DateTime? lockedUntil { get; set; }
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime? JoiningDate { get; set; }
+
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+    public DateTime? ReleaseDate { get; set; }
 }

@@ -30,6 +30,7 @@ public class User
     [Required]
     public string? OfficialEmail { get; set; }
     public DateTime JoiningDate { get; set; }
+    public DateTime? ReleaseDate { get; set; }
 
     [Required]
     public DateTime DOB { get; set; }
