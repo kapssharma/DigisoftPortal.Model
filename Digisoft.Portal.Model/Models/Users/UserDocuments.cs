@@ -4,7 +4,7 @@ namespace DigisoftPortal.Model;
 
 public class UserDocuments
 {
-    public int UserDocumentsId { get; set; }
+    public int ID { get; set; }
     public int DocumentId { get; set; }
   
     public string? DocumentName { get; set; }

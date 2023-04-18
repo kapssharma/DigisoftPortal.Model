@@ -4,7 +4,7 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class User
 {
-  
+
     public int Id { get; set; }
     [DataType("nvarchar(50)")]
     [Required]
@@ -29,11 +29,16 @@ public class User
     [DataType("nvarchar(50)")]
     [Required]
     public string? OfficialEmail { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime JoiningDate { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime? ReleaseDate { get; set; }
 
     [Required]
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime DOB { get; set; }
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime CreatedOn { get; set; }
-   
+    public bool IsActive { get; set; }
+
 }
