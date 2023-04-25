@@ -11,6 +11,8 @@ public class UserAddress
     public string? Country { get; set; }
     public string? StateId { get; set; }
     public string? City { get; set; }
+    [Required(ErrorMessage = "Zip is Required")]
+    [RegularExpression(@"^\d{5}(-\d{4})?$", ErrorMessage = "Invalid Zip")]
     public string? ZipCode { get; set; }
     public bool IsPermanent { get; set; }
 }

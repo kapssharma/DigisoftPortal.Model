@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>Digisoft.Portal.Model</PackageId>
-    <Version>1.0.6.5</Version>
+    <Version>1.0.6.6</Version>
     <Authors>Kapil Sharma</Authors>
     <Company>Digisoft Solution</Company>
     <Product>Digisoft Solution Portal</Product>
