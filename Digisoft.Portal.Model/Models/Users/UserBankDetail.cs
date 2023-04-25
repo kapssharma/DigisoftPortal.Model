@@ -7,6 +7,7 @@ public class UserBankDetail
     [DataType("nvarchar(20)")]
 
     public int ID { get; set; }
+    [MaxLength(15)]
     public string? AccountNo { get; set; }
     [DataType("nvarchar(100)")]
     
