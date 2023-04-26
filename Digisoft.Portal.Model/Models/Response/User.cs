@@ -4,7 +4,7 @@ namespace DigisoftPortal.Model.Models.Response;
 
 public class User
 {
-
+    public string? Name { get; set; }
     public int Id { get; set; }
     [DataType("nvarchar(50)")]
     [Required]
