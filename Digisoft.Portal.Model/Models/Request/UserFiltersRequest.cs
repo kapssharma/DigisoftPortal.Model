@@ -10,9 +10,9 @@ namespace Digisoft.Portal.Model.Models.Request
     public class UserFiltersRequest
     {
         public string? SearchColumn { get; set; } = "";
-        public string? FirstName { get; set; }
-        public string? MiddleName { get; set; }
-        public string? LastName { get; set; }
+        public string? FirstName { get; set; } = "";
+        public string? MiddleName { get; set; } = "";
+        public string? LastName { get; set; } = "";
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime? DOB { get; set; }
 
