@@ -5,11 +5,11 @@ namespace Digisoft.Portal.Model.Models.Request
     {
         public string? Description { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime EffectiveTo { get; set; }
+        public DateTime? EffectiveTo { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? EffectiveFrom { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime CreatedOn { get; set; }
+        public DateTime? CreatedOn { get; set; }
         public bool Notified { get; set; }
         public int PageNo { get; set; } = 1;
         public int PageSize { get; set; } = 10;
