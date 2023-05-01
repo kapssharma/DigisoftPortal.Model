@@ -12,14 +12,15 @@ public class UserRequest:GenericColumns
     [DataType("nvarchar(50)")]
     [Required]
     public string? LastName { get; set; }
+
     [DataType("nvarchar(50)")]
     [Required(ErrorMessage = "Phone Number Required!")]
-    [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Entered phone format is not valid.")]
+    [RegularExpression(@"^(0|91)?[6-9][0-9]{9}$", ErrorMessage = "Entered phone format is not valid.")]
     public string? PhoneNumber { get; set; }
 
     [DataType("nvarchar(50)")]
     [Required(ErrorMessage = "Emergency Number Required!")]
-    [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Entered phone format is not valid.")]
+    [RegularExpression(@"^(0|91)?[6-9][0-9]{9}$", ErrorMessage = "Entered phone format is not valid.")]
     public string? AlternativePhoneNumber { get; set; }
 
     [DataType("nvarchar(50)")]
@@ -32,7 +33,7 @@ public class UserRequest:GenericColumns
 
     [DataType("nvarchar(50)")]
     [Required(ErrorMessage = "PAN Number is required")]
-    [RegularExpression("^([A-Za-z]){5}([0-9]){4}([A-Za-z]){1}$", ErrorMessage = "Invalid PAN Number")]
+    [RegularExpression("^([A-Z]){5}([0-9]){4}([A-Z]){1}$", ErrorMessage = "Invalid PAN Number")]
     public string? Pancard { get; set; }
 
     [Required(ErrorMessage = "Email is required.")]
