@@ -10,6 +10,5 @@ public class HRLeadTechnicalInformation
     public int SkillSetID { get; set; }
     public decimal ExpInYY { get; set; }
     public decimal ExpInMM { get; set; }
-    public int DesignationID { get; set; }
 
 }
