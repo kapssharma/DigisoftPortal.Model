@@ -48,6 +48,7 @@ public class UserRequest:GenericColumns
     public string? OfficialEmail { get; set; }
     public string? ProfileImage { get; set; }
 
+    [Required(ErrorMessage = "DOB is required.")]
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime? DOB { get; set; }
 
