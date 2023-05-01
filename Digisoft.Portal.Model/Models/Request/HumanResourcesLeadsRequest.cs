@@ -49,6 +49,7 @@ public class HumanResourcesLeadsRequest:GenericColumns
     public int RoleID { get; set; }
     [DataType("varchar(400)")]
     public string? Remark { get; set; }
+    public int DesignationID { get; set; }
 
     public List<HRLeadTechnicalInformation>? HRLeadTechnicalInformation { get; set; }
     public List<HRLeadDocuments>? HRLeadDocuments { get; set; }
