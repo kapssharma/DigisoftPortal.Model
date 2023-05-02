@@ -1,4 +1,5 @@
-﻿using DigisoftPortal.Model.Models.Shared;
+﻿using DigisoftPortal.Model.Models.Response;
+using DigisoftPortal.Model.Models.Shared;
 
 using System;
 using System.Collections.Generic;
@@ -13,9 +14,9 @@ namespace Digisoft.Portal.Model.ViewModels
         public GetListUserLeave()
         {
             Pagination = new Pagination();
-            VMForUserLeave = new List<VMForUserLeave>();
+            LeavesResponse = new List<LeavesResponse>();
         }
         public Pagination? Pagination { get; set; }
-        public List<VMForUserLeave>? VMForUserLeave { get; set; }
+        public List<LeavesResponse>? LeavesResponse { get; set; }
     }
 }
