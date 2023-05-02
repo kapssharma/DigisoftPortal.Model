@@ -1,18 +1,17 @@
-﻿using DigisoftPortal.Model.Models;
-using DigisoftPortal.Model.Models.Response;
-using DigisoftPortal.Model.Models.Shared;
+﻿using DigisoftPortal.Model.Models.Shared;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Digisoft.Portal.Model.ViewModels
 {
-    public class GetListUserLeave
+    public class UserLeavesResponse
     {
-        public GetListUserLeave()
+        public UserLeavesResponse()
         {
             Pagination = new Pagination();
             UserLeave = new List<UserLeave>();
