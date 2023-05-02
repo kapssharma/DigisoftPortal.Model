@@ -26,5 +26,6 @@ namespace Digisoft.Portal.Model.ViewModels
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? ApprovedAt1 { get; set; }
         public bool IsActive { get; set; }
+        public List<UserLeaveDays>? UserLeaveDays { get; set; }
     }
 }
