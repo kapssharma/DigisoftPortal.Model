@@ -1,4 +1,5 @@
-﻿using DigisoftPortal.Model.Models.Response;
+﻿using DigisoftPortal.Model.Models;
+using DigisoftPortal.Model.Models.Response;
 using DigisoftPortal.Model.Models.Shared;
 
 using System;
@@ -14,9 +15,11 @@ namespace Digisoft.Portal.Model.ViewModels
         public GetListUserLeave()
         {
             Pagination = new Pagination();
-            LeavesResponse = new List<LeavesResponse>();
+            LeavesRequests = new List<LeavesRequest>();
+            Leavesdays = new List<LeaveDays>();
         }
         public Pagination? Pagination { get; set; }
-        public List<LeavesResponse>? LeavesResponse { get; set; }
+        public List<LeavesRequest>? LeavesRequests { get; set; }
+        public List<LeaveDays>? Leavesdays { get; set; }
     }
 }
