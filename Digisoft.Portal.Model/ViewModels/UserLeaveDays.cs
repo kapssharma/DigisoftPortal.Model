@@ -12,12 +12,10 @@ namespace Digisoft.Portal.Model.ViewModels
         public int Id { get; set; }
         public int UserLeavesId { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? StartFrom { get; set; }
+        public DateTime? From { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? StartEnd { get; set; }
-        public int TotalDays { get; set; }
+        public DateTime? To { get; set; }
+        public int LeaveTypeID { get; set; }
         public string? LeaveType { get; set; }
-        public DateTime? CreatedOn { get; set; }
-        public bool IsActive { get; set; }
     }
 }
