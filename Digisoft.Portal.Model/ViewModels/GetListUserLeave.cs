@@ -15,11 +15,10 @@ namespace Digisoft.Portal.Model.ViewModels
         public GetListUserLeave()
         {
             Pagination = new Pagination();
-            LeavesRequests = new List<LeavesRequest>();
-            Leavesdays = new List<LeaveDays>();
+            LeavesRequest = new LeavesResponse();
+
         }
         public Pagination? Pagination { get; set; }
-        public List<LeavesRequest>? LeavesRequests { get; set; }
-        public List<LeaveDays>? Leavesdays { get; set; }
+        public LeavesResponse? LeavesRequest { get; set; }
     }
 }
