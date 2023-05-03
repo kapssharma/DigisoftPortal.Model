@@ -14,7 +14,7 @@ public class Modal
     public string? ModalPopupID { get; set; }
     public string? FormID { get; set; }
     public string? CloseButtonText { get; set; } = "Close";
-    public string? SaveButtonText { get; set; } = "Save";
+    public string? SaveButtonText { get; set; } = "Submit";
     public string? ModalClassName { get; set; }
     public string? FunctionName { get; set; } = "OnSubmit(this)";
     public string? CallBackFunctionName { get; set; }
