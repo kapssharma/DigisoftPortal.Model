@@ -2,7 +2,7 @@
 
 namespace DigisoftPortal.Model.Models.Request;
 
-public class Portals:GenericColumns
+public class PortalRequest :GenericColumns
 {
 
     [DataType("varchar(500)")]
