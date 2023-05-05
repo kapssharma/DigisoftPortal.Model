@@ -10,8 +10,8 @@ public class PortalFiltersRequest
     public DateTime? ValidTo { get; set; }
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime? CreatedOn { get; set; }
-    public bool PaidService { get; set; }
-    public bool Purchased { get; set; }
+    public bool? PaidService { get; set; }
+    public bool? Purchased { get; set; }
     public string? SearchValue { get; set; } = "";
     public int PageNo { get; set; } = 1;
     public int PageSize { get; set; } = 10;
