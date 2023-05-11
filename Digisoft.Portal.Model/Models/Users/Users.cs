@@ -12,5 +12,6 @@ public class Users
     public List<UserDocuments>? UserDocuments { get; set; }
     public List<UserCompany>? UserCompany { get; set; }
     public List<UserGetTOKnows>? UserGetTOKnows { get; set; }
+    public List<UserPassword>? UserPassword { get; set; }
 
 }
