@@ -14,4 +14,6 @@ public class UserPassword
     public string? Salt { get; set; }
     [Required]
     public DateTime ExpiryOn { get; set; }
+
+    public string? PasswordResetCode { get; set; }
 }
