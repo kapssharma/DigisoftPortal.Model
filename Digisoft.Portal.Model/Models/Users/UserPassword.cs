@@ -15,5 +15,5 @@ public class UserPassword
     [Required]
     public DateTime ExpiryOn { get; set; }
 
-    public string? PasswordResetCode { get; set; }
+    public string? ResetCode { get; set; }
 }
