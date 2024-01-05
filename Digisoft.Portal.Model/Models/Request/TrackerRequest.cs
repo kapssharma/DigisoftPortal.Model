@@ -6,6 +6,11 @@ public class TrackerRequest: GenericColumns
 {
     [Required]
     public decimal Amount { get; set; }
+    [DataType("varchar(200)")]
+    [Required(ErrorMessage = "Source Type is Required")]
     public int TrackerTypeID { get; set; }
-    public string Description { get; set; }
+
+    [DataType("varchar(200)")]
+    [Required(ErrorMessage = "Expense Description is Required")]
+    public string? Description { get; set; }
 }
