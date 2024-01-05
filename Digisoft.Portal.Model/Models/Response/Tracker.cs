@@ -13,6 +13,9 @@ public class Tracker
     public string? Description { get; set; }
 
     public int TrackerTypeID { get; set; }
+    public string? TrackerType { get; set; }
+
+    public string? SourceType { get; set; }
 
     public DateTime CreatedOn { get; set; }
 }
