@@ -7,5 +7,5 @@ public class TrackerRequest: GenericColumns
     [Required]
     public decimal Amount { get; set; }
     public int TrackerTypeID { get; set; }
-    public int Description { get; set; }
+    public string Description { get; set; }
 }
