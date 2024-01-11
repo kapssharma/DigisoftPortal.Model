@@ -12,5 +12,4 @@ public enum Status
 	ACCOUNT_INACTIVE,
 	[Description("We are not able to locate your account.")]
 	NOT_FOUND
-
 }
