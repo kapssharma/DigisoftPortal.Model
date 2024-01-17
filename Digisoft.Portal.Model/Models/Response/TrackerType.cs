@@ -9,11 +9,11 @@ namespace Digisoft.Portal.Model.Models.Response
 {
     public class TrackerType
     {
-        public int Id { get; set; }
+        public int SourceID { get; set; }
         [Required]
-        public string? Name { get; set; }
+        public string? SourceName { get; set; }
         [Required]
-        public int TypeId { get; set; }
+        public int TypeID { get; set; }
         [Required]
         public bool IsActive { get; set; }
     }
