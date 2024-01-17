@@ -12,6 +12,6 @@ public class AuthenticateResponse
     public int RoleID { get; set; }
     public int DesignationID { get; set; }
     public string? Token { get; set; }
-    public string? RefereshToken { get; set; }
+    public string? RefreshToken { get; set; }
     public string? Message { get; set; }
 }

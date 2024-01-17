@@ -16,5 +16,7 @@ namespace Digisoft.Portal.Web.Models
         public List<User>? User { get; set; }
         public List<LeaveReason>? LeaveReason { get; set; }
         public List<LeaveType>? LeaveType { get; set; }
+
+        public string? SelectedLeaveReason { get; set; }
     }
 }
