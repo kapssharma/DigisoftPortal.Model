@@ -9,7 +9,6 @@ namespace Digisoft.Portal.Model.Models.Request
 {
     public class WifiFilterRequest
     {
-       
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? updateOn { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
