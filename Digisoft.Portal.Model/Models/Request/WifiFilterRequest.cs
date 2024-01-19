@@ -9,9 +9,7 @@ namespace Digisoft.Portal.Model.Models.Request
 {
     public class WifiFilterRequest
     {
-        //public string? Name { get; set; }
-        //public string? ProviderCompany { get; set; }
-        //public string? StaticIpAddress { get; set; }
+       
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? updateOn { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
