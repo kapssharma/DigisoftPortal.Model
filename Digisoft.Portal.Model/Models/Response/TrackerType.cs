@@ -13,8 +13,6 @@ namespace Digisoft.Portal.Model.Models.Response
         [Required]
         public string? SourceName { get; set; }
         [Required]
-        public int TypeID { get; set; }
-        [Required]
-        public bool IsActive { get; set; }
+        public int TrackerTypeID { get; set; }
     }
 }
