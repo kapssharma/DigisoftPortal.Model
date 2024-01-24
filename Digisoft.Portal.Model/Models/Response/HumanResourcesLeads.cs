@@ -1,6 +1,6 @@
 ﻿namespace DigisoftPortal.Model.Models.Response;
 
-public class HumanResourcesLeads
+public class HumanResourcesLeads:GenericColumns
 {
     public string? FirstName { get; set; }
 
@@ -31,4 +31,16 @@ public class HumanResourcesLeads
     public string? Offered { get; set; }
     public int RoleId { get; set; }
     public string? Remark { get; set; }
+    public List<UserAddress>? UserAddress { get; set; }
+
+    public UserBankDetail? UserBankDetails { get; set; }
+
+    public List<UserTechnicalInformtion>? UserTechnicalInformtions { get; set; }
+
+    public List<UserDocuments>? UserDocuments { get; set; }
+
+    public List<UserCompany>? UserCompany { get; set; }
+
+    public List<UserGetTOKnows>? UserGetTOKnows { get; set; }
+
 }
